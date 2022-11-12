@@ -1,21 +1,43 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header>
+  <ion-toolbar color="corfundo">
     <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
+      <ion-menu-button color="branco"></ion-menu-button>
     </ion-buttons>
-    <ion-title>{{ folder }}</ion-title>
+    <ion-title>{{ "Início" }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">{{ folder }}</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card button="true" routerLink="/sobremim" color="cornelson">
+    <img src="./assets/imgs/me.jpg" />
+    <ion-card-header>
+      
+        <ion-card-title>Apresentação</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <h2>Olá, o meu nome é Nelson, tenho 19 e estou a estudar engenharia informática.
+      Gosto de videojogos, de programar, gosto de futebol, de ciclismo, de desportos motorizados e 
+      também conduzir e viajar.</h2>
+    </ion-card-content>
+  </ion-card>
+  <ion-card button="true" routerLink="/habilitacao" color="cornelson">
+    <img src="./assets/imgs/ei.jpg" />
+    <ion-card-header>
+      <ion-card-title>Habilitações</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <h2>Conclui o secundário em Ciências e Tecnologias no ano de 2020, no mesmo ano em 
+        outubro entrei para licenciatura em engenharia Informática no IPVC.</h2>
+    </ion-card-content>
+  </ion-card>
+  <ion-card button="true" routerLink="/passatempos" color="cornelson">
+    <img src="./assets/imgs/videogame.jpeg" />
+    <ion-card-header>
+      <ion-card-title>Passatempos</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <h2>Nos tempos livres gosto de jogar videojogos, ver séries, filmes, música,ver e jogar de futebol,
+         andar de bicicleta, etc...</h2>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
